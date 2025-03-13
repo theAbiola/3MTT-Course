@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3MTT Moving Company</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
+        }
+
+        .hero-container {
+            background-image: url('./images/moving3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            height: 390px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .action-button {
+            color: white;
+            background-color: #ff6600;
+            border: none;
+            margin: 50px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .pricing-container {
+            display: flex;
+            gap: 2rem;
+            /* or 32px. They mean the same since the default size of <html> which is the root element is 16px */
+            height: 65vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pricing-container>* {
+            flex: 1;
+            /* just so the items have the same width and they should also grow and shrink*/
+            max-width: 400px;
+            /* flex-shrink: 0; */
+        }
+
+        .pricing-plan {
+            background-color: #f2f2f2;
+            text-align: center;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .plan-title,
+        .plan-price {
+            font-weight: bold;
+        }
+
+        .plan-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .plan-price {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .plan-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .plan-features li {
+            margin-bottom: 20px;
+            /* padding-right: 40px; */
+        }
+
+        .plan-button {
+            color: white;
+            background-color: #ff6600;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        footer {
+            /* margin-top: 20px; */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: black;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff6600;
+        }
+
+        @media (max-width: 540px) {
+            .hero-container {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 3rem;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+
+            .action-button {
+                margin-bottom: 80px;
+            }
+
+        }
+
+        @media (max-width: 800px) {
+            .pricing-container {
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .pricing-container>* {
+                min-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-container">
+        <h1>3MTT Moving Company</h1>
+        <p>For a smooth and stress-free moving experience, try our moving company. <br>
+            We give the best moving experience
+        </p>
+        <button class="action-button">Get Started</button>
+    </div>
+
+    <div class="pricing-container">
+        <div class="pricing-plan">
+            <div class="plan-title">Basic</div>
+            <div class="plan-price">₦150,000</div>
+            <ul class="plan-features">
+                <li>✅ Move in 2 days</li>
+                <li>✅ All Luggage</li>
+                <li>🚫 Support</li>
+            </ul>
+            <button class="plan-button">Get Plan</button>
+        </div>
+        <div class="pricing-plan">
+            <div class="plan-title">Standard</div>
+            <div class="plan-price">₦250,000</div>
+            <ul class="plan-features">
+                <li>✅ Move in 1 day</li>
+                <li>✅ All Luggage</li>
+                <li>✅ Phone &amp; Email Support</li>
+            </ul>
+            <button class="plan-button">Get Plan</button>
+        </div>
+        <div class="pricing-plan">
+            <div class="plan-title">Premium</div>
+            <div class="plan-price">₦400,000</div>
+            <ul class="plan-features">
+                <li>✅ Move in less than 5 hours</li>
+                <li>✅ Priority access</li>
+                <li>✅ 24/7 Support</li>
+            </ul>
+            <button class="plan-button">Get Plan</button>
+        </div>
+    </div>
+
+    <footer>
+        <a href="mailto:iamhabibabiola@gmail.com">Email</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+    </footer>
+</body>
+
+</html>
